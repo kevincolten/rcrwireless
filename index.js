@@ -6,7 +6,7 @@ const forms = [];
 let baseUrl = '';
 
 const headers = {
-  Authorization: `Basic ${btoa('ArdenMediaCompanyLLC\\Luke.Filipos:#4fYuZ@g%Vab')}`,
+  Authorization: `Basic ${btoa(`${process.env.ELOQUA_COMPANY}\\${process.env.ELOQUA_USERNAME}:${process.env.ELOQUA_PASSWORD}`)}`,
   Accept: 'application/json'
 }
 
